@@ -1,4 +1,6 @@
+//postReducer.js  contendrá el estado post con el post que seleccionemos de la lista completa,
 //Gestiona los datos de un los posts de manera individual 
+//Al igual que postsReducer contemplará el estado de los errores y la carga
 
 
 export const initialState = {

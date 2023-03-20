@@ -1,3 +1,7 @@
+// commentsReducer: gestiona los comentarios de los posts 
+// commentsReducer.js: contendrá la lista de comentarios en un array vacío y el estado de la carga y errores. 
+//Al igual que los anteriores contemplaremos las acciones más adelante:
+
 import * as actions from "../actions/commentsActions";
 
 export const initialState = {
