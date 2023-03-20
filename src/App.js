@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Navigate,
+  Routes,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Posts from "./components/Post";
+import Post from "./components/Post";
+import PostPage from "./pages/PostPage";
+import { Menu } from "./components/Menu";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Menu />
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/posts" element={<Posts/>} />
+        <Route exact path="/posts/:postId" element={<Post/>} />
+       <Route to="/" /> {/*  Cualquier ruta que marquemos que no se corresponda a posts nos redirigirá a la Home*/}
+      </Routes>
+    </Router>
   );
 }
 
