@@ -1,3 +1,7 @@
+// postActions: con esta acción vamos a obtener un post individual de la API, almacenándolo en el estado que hemos generado.
+// Esta acción es muy similar a la acción que hemos creado para la lista de posts. La única diferencia es que la función recibe 
+// el postId del post como argumento para individualizar la petición, almacenando un solo post.
+
 export const GET_POST = "GET_POST";
 export const GET_POST_OK = "GET_POST_OK";
 export const GET_POST_ERROR = "GET_POST_ERROR";

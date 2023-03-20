@@ -10,20 +10,18 @@ export const initialState = {
   errors: false,
 };
 
+// La lógica es exactamente igual que postsReducer, seteando los valores de state y loading según la acción y 
+// almacenando los comentarios obtenidos en la variable comments.
 export default function commentsReducer(state = initialState, action) {
   switch (action.type) {
     case actions.GET_COMMENTS:
       return { ...state, loading: true };
     case actions.GET_COMMENTS_OK:
-      return {
-        ...state,
-        comments: action.payload,
-        loading: false,
-        errors: false,
-      };
+      return { ...state, comments: action.payload, loading: false, errors: false};
     case actions.GET_COMMENTS_ERROR:
       return { ...state, loading: false, errors: true };
     default:
       return state;
   }
 }
+
