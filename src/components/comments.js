@@ -1,3 +1,7 @@
+// Comments: como hemos indicado en el concepto general de nuestra aplicación también tenemos que crear 
+// un componente que muestre los comentarios de cada post. Los comentarios que obtendremos se compondrán
+//  de un título, una dirección de e-mail y el cuerpo del mensaje:
+
 import React from "react";
 
 export const Comment = ({ comment }) => (

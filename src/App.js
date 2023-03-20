@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Navigate,
-  Routes,
-} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Navigate, Routes,} from "react-router-dom";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
-//import Post from "./components/Post";
-
+import Post from "./components/Post";             
 import { Menu } from "./components/Menu";
 import PostPage from "./pages/PostPage";
 

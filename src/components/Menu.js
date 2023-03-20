@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; //para usar Link hay que importar el componente
 
 export const Menu = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">

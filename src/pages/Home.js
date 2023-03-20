@@ -7,10 +7,9 @@ function Home() {
       <div className="row">
         <div className="col-md-12">
           <h1>Home</h1>
-          <p>This is the Home Page</p>
-
+          <p>Esta es la Home</p>
           <Link to="/posts" className="btn btn-primary">
-            Read Posts
+            Leer Posts
           </Link>
         </div>
       </div>
