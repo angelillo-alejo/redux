@@ -1,6 +1,3 @@
-// postActions: con esta acción vamos a obtener un post individual de la API, 
-// almacenándolo en el estado que hemos generado.
-
 export const GET_POST = "GET_POST";
 export const GET_POST_OK = "GET_POST_OK";
 export const GET_POST_ERROR = "GET_POST_ERROR";

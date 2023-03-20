@@ -6,6 +6,7 @@ import {Provider} from 'react-redux';
 //Para obtener los posts de forma asíncrona usaremos Redux Thunk,
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
 import rootReducer from './reducers';
